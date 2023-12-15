@@ -1,0 +1,101 @@
+/* 
+Style the website you made last week using CSS with the following requirements:
+Use only external CSS file (no internal or inline styling)
+Every element must be styled.
+Create style rules using class, id, and element selectors.
+*/
+
+/* ---ELEMENT SELECTORS--- */
+
+html {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(180deg, #ffffff, #ffffff, #8b8f8f);
+  }
+  body {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+  h1 {
+    text-align: left;
+    filter: drop-shadow (2px 2px 1px #0f6a9e);
+    }
+  h2 {
+    margin: 4rem auto 1rem auto;
+    text-align: left
+  }
+  p,
+  li {
+    font-size: 20px;
+  }
+  ol {
+    padding: 20px;
+  }
+  
+  ol li {
+    padding: 10px 0;
+  }
+  img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-radius: 1%;
+      }
+    table, th, td {
+        border:1px solid rgb(0, 0, 0);
+    }
+  form {
+    background-color : rgb(24, 39, 54);
+    color : #adadad;
+  }
+  /* ---CUSTOM CLASS NAME SELECTORS--- */
+  
+.FRIA-DIAGRAM {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+
+    }
+
+
+
+  
+  /* ----- MEDIA QUERIES for RESPONSIVE DESIGN ----- */
+  
+  @media only screen and (max-width: 1500px) {
+    .img-div img {
+      width: 420px;
+    }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    .tips-div {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    body {
+      margin: 1rem;
+    }
+    p,
+    li {
+      font-size: 16px;
+    }
+    .img-div img {
+      width: 230px;
+    }
+    .tips-div img {
+      width: 230px;
+    }
+    #banner-long {
+      display: none;
+    }
+    #banner-short {
+      display: block;
+    }
+  }
