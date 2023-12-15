@@ -57,7 +57,22 @@ html {
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1200px;
+}
 
+/* --- NOT WORKING? --> */
+
+.FRIA-SITEIMGS {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 420px
+}
+
+        /* display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        '/
+        max-width: 420px;
     }
 
 
