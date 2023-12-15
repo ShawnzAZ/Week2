@@ -27,14 +27,19 @@ html {
   }
   p,
   li {
-    font-size: 20px;
+    font-size: 18px;
   }
   ol {
     padding: 20px;
+    background-color: #d6412770;
   }
   
   ol li {
     padding: 10px 0;
+  }
+  ul {
+    padding: 20px;
+    background-color: #b3b2b2;
   }
   img {
     margin-top: 1rem;
