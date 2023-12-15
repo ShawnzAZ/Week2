@@ -25,11 +25,35 @@ html {
     margin: 4rem auto 1rem auto;
     text-align: left
   }
-  p,
-  li {
-    font-size: 18px;
+  h3 {
+    margin: 4rem auto 1rem auto;
+    text-align: left
   }
-  ol {
+
+iframe {
+    /*--- This CSS is styling the elements, but the
+        object needed to be larger for the CSS to down-size
+        it (will not enlarge), thus in the in-line 
+        width / height being specified at 
+        560 / 315 respectively    ---*/
+    max-width: 500px;
+    max-height: 300px;
+     ;
+}   
+
+  img {
+    max-width: 420px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0, 0.5)
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 0.8rem ;
+  }
+
+    ol {
     padding: 20px;
     background-color: #d6412770;
   }
@@ -39,21 +63,17 @@ html {
   }
   ul {
     padding: 20px;
-    background-color: #b3b2b2;
+    background-color: #e4e2e2;
   }
-  img {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    border-radius: 1%;
-      }
+  
     table, th, td {
         border:1px solid rgb(0, 0, 0);
+        background-color: #dde6e6;
+        padding: 5px
     }
   form {
-    background-color : rgb(24, 39, 54);
-    color : #adadad;
+    background-color : rgb(109, 119, 133);
+    color : #f3f2f2;
   }
   /* ---CUSTOM CLASS NAME SELECTORS--- */
   
@@ -61,61 +81,39 @@ html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 100%;
+    height: auto;
 }
 
-/* --- NOT WORKING? --> */
 
-.FRIA-SITEIMGS {
+
+.FRIA-SITESIMG {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 420px
+    padding: 1rem;
+    justify-content: space-around
+
+}
+.vidswrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+/* --- ID SELECTOR --> */
+#MainLogo {
+    margin-left: 1rem;
+    box-shadow: none;
+    max-width: 200px;
 }
 
-        /* display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        '/
-        max-width: 420px;
-    }
+#YTVideos {
+    margin-left: 1rem;
+    box-shadow: none;
+    max-width: 200px;
+}
 
-
-
-  
-  /* ----- MEDIA QUERIES for RESPONSIVE DESIGN ----- */
-  
-  @media only screen and (max-width: 1500px) {
-    .img-div img {
-      width: 420px;
-    }
-  }
-  
-  @media only screen and (max-width: 1100px) {
-    .tips-div {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    body {
-      margin: 1rem;
-    }
-    p,
-    li {
-      font-size: 16px;
-    }
-    .img-div img {
-      width: 230px;
-    }
-    .tips-div img {
-      width: 230px;
-    }
-    #banner-long {
-      display: none;
-    }
-    #banner-short {
-      display: block;
-    }
-  }
+#FRIASiteIMG {
+    margin-left: 1rem;
+    box-shadow: none;
+    max-width: 200px;
+}
