@@ -91,7 +91,6 @@ iframe {
     display: flex;
     padding: 1rem;
     justify-content: space-around
-
 }
 .vidswrapper {
     width: 100%;
@@ -106,14 +105,3 @@ iframe {
     max-width: 200px;
 }
 
-#YTVideos {
-    margin-left: 1rem;
-    box-shadow: none;
-    max-width: 200px;
-}
-
-#FRIASiteIMG {
-    margin-left: 1rem;
-    box-shadow: none;
-    max-width: 200px;
-}
